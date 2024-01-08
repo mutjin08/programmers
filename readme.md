@@ -8,29 +8,35 @@ https://school.programmers.co.kr/app/courses/16566/curriculum#part-40097<br>
     <tr>
         <th>문제</th>
         <th>링크</th>
+        <th>난이도</th>
         <th>복습</th>
     </tr>
     <tr>
         <td>교점에 별 만들기</td>
         <td>https://school.programmers.co.kr/tryouts/72046/challenges?language=python3</td>
         <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
         <td></td>
     </tr>
     <tr>
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
     </tr>
     <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
