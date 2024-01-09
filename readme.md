@@ -24,10 +24,10 @@ https://school.programmers.co.kr/app/courses/16566/curriculum#part-40097<br>
         <td></td>
     </tr>
     <tr>
+        <td>72054_튜플</td>
+        <td>2</td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>https://school.programmers.co.kr/tryouts/72054/challenges?language=python3</td>
     </tr>
     <tr>
         <td></td>
