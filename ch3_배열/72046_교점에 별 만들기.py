@@ -11,4 +11,4 @@ def solution(line):
         if x%1!=0 or y%1!=0:
             continue
         spots.append((x, y))
-    return spots
+    return list(set(spots))
