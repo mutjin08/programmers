@@ -1,21 +1,22 @@
+from itertools import permutations
+
+def is_banned(uid, bid):
+    if len(uid)!=len(bid):
+        return False
+    for i in range(len(uid)):
+        if bid[i]=="*" or bid[i]==uid[i]:
+            continue
+        return False
+    return True
+
 def solution(user_id, banned_id):
-    cands = [[] for _ in range(len(banned_id))]
-    
-    for b in range(len(banned_id)):
-        for g in range(len(user_id)):
-            bid, gid = banned_id[b], user_id[g]
-
-            if len(bid)!=len(gid):
-                continue
-
-            flag=0
-            for i in range(len(bid)):
-                if not(bid[i]=="*" or bid[i]==gid[i]):
-                    flag = 1
-                    break
-            if flag:
-                continue
-
-            cands[b].append(gid)
-            
-    return cands
+    answer = []
+    for users in permutations(user_id, len(banned_id)):
+        all_banned = 1
+        for i in range(len(users)):
+            if not is_banned(users[i], banned_id[i]):
+                all_banned = 0
+                break
+        if all_banned and set(users) not in answer:
+            answer.append(set(users))
+    return len(answer)
