@@ -1,7 +1,6 @@
-# failure
-from itertools import permutations
 def solution(numbers):
-    answer = 0
-    for number in permutations(map(str, numbers), len(numbers)):
-        answer = max(answer, int("".join(number)))
-    return str(answer)
+    numbers = list(map(str, numbers))
+    numbers.sort(key = lambda x : x*3, reverse = True)
+    
+    #"0000"제거하기
+    return str(int("".join(numbers)))
