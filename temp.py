@@ -1,8 +1,17 @@
 from collections import deque
-def make_partition(original, cuts, partition = []):
-  
 
-  return [[-1]]
+def make_partition(n, lengths, partition=[]):
+    if sum(partition) == n:
+        return [partition]
+
+    partitions = []
+    for length in lengths:
+        remaining_lengths = [l for l in lengths if l != length]
+        if sum(partition) + length <= n:
+            new_partition = partition + [length]
+            partitions += make_partition(n, remaining_lengths, new_partition)
+
+    return partitions
 
 def find_partition(original, cuts):
   answer = []
@@ -16,8 +25,7 @@ def find_partition(original, cuts):
     return answer
 
   # 잘린 막대기 제거
-  answer.append(make_partition(original, cuts))
-  return answer
+  return answer+make_partition(original, cuts)
 
 def solution(n, cuts):
   for original in range(max(cuts), sum(cuts)+1):

@@ -1,8 +1,12 @@
 from collections import deque
-def make_partition(original, cuts, partition = []):
-  
-
-  return [[-1]]
+from itertools import combinations
+def make_partition(original, cuts):
+  answer = []
+  for i in range(1, len(cuts)-1):
+    for case in combinations(cuts, i):
+      if sum(case)==original:
+        answer.append(list(case))
+  return answer
 
 def find_partition(original, cuts):
   answer = []
