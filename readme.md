@@ -1,4 +1,5 @@
 <h1>코딩테스트 고득점 Kit</h1>
+<h2>ch3_배열</h2>
 <table>
   <tr>
     <th>번호_문제</th>
@@ -27,13 +28,61 @@
   <tr>
     <td>72050_거리두기 확인하기</td>
     <td>https://school.programmers.co.kr/tryouts/72050/challenges</td>
-    <td>1</td>
-    <td></td>
+    <td>0</td>
+    <td>다시풀기</td>
   </tr>
   <tr>
     <td>72051_행렬의 곱셈</td>
     <td>https://school.programmers.co.kr/tryouts/72051/challenges</td>
     <td>1</td>
     <td></td>
+  </tr>
+</table>
+
+<h2>ch_</h2>
+<table>
+  <tr>
+    <th>번호_문제</th>
+    <th>링크</th>
+    <th>다시풀기</th>
+    <th>체크</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</table>
+
+<h2>ch_</h2>
+<table>
+  <tr>
+    <th>번호_문제</th>
+    <th>링크</th>
+    <th>다시풀기</th>
+    <th>체크</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</table>
+
+<h2>ch_</h2>
+<table>
+  <tr>
+    <th>번호_문제</th>
+    <th>링크</th>
+    <th>다시풀기</th>
+    <th>체크</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 </table>
