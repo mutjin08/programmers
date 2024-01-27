@@ -1,15 +1,16 @@
 def solution(s):
     answer = ''
-    
     idx = 0
-    for a in s:
-        if a==" ":
-            answer+=a
+    for c in s:
+        if c==" ":
+            answer += c
             idx = 0
-        else:
-            if idx%2==0:
-                answer+=a.upper()
-            elif idx%2!=0:
-                answer+=a.lower()
-            idx+=1
+            continue
+            
+        if idx%2==0:
+            answer+=c.upper()
+            idx += 1
+        elif idx%2!=0:
+            answer+=c.lower()
+            idx += 1
     return answer
