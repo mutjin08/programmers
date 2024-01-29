@@ -1,20 +1,20 @@
 def solution(n, times):
-    answer = -1
+    answer = 0
     left, right = 1, max(times)*n
     
-    while left<=right:
+    while left <= right:
         mid = (left+right)//2
         
-        passed = 0
+        total = 0
         for time in times:
-            passed += mid//time
-            if passed>=n:
+            total += mid//time
+            
+            if total >= n:
                 break
         
-        if passed >= n:
+        if total >=n:
             answer = mid
             right = mid-1
         else:
             left = mid+1
     return answer
-            
