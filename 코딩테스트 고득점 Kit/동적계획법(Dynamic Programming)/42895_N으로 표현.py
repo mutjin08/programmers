@@ -1,19 +1,20 @@
-# 다시풀기
-def solution(N, number):
-    dp = {}
-    for i in range(1, 9):
-        if i not in dp:
-            dp[i] = set()
-        dp[i].add(int(str(N)*i))
+def solution(a, target):
+    dp = [{}]
+    
+    for n in range(1, 9):
+        temp = set()
+        temp.add(int(str(a)*n))
         
-        for j in range(1, i):
-            for op1 in dp[j]:
-                for op2 in dp[i-j]:
-                    dp[i].add(op1 + op2)
-                    dp[i].add(op1 - op2)
-                    dp[i].add(op1 * op2)
+        for i in range(1, n):
+            for op1 in dp[i]:
+                for op2 in dp[n-i]:
+                    temp.add(op1+op2)
+                    temp.add(op1-op2)
+                    temp.add(op1*op2)
                     if op2!=0:
-                        dp[i].add(op1 // op2)
-        if number in dp[i]:
-            return i
+                        temp.add(op1/op2)
+                        
+        if target in temp:
+            return n
+        dp.append(temp)
     return -1
