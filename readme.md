@@ -1,4 +1,4 @@
-<h1>코딩테스트 고득점 Kit</h1>
+<h1>프로그래머스 코딩 테스트 문제 풀이 전략 파이썬편</h1>
 <h2>ch3_배열</h2>
 <table>
   <tr>
@@ -56,10 +56,16 @@
     <td>72053_이상한 문자 만들기</td>
     <td>https://school.programmers.co.kr/tryouts/72053/challenges</td>
     <td>NO</td>
-    <td></td>
+    <td>upper(), lower()</td>
   </tr>
     <td>72054_튜플</td>
     <td>https://school.programmers.co.kr/tryouts/72054/challenges</td>
+    <td></td>
+    <td>replace 갱신필요</td>
+  </tr>
+  <tr>
+    <td>72055_짝지어 제거하기</td>
+    <td>https://school.programmers.co.kr/tryouts/72055/challenges</td>
     <td></td>
     <td></td>
   </tr>
