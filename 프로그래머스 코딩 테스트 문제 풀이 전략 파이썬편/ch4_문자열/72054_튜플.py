@@ -1,15 +1,14 @@
 def solution(s):
     tuples = []
-    for a in s.split('},'):
-        tuples.append(a.replace('{', '').replace('}', '').split(','))
+    for a in s.split("},"):
+        a = a.replace("{", "").replace("}", "").split(",")
+        tuples.append(a)
     tuples.sort(key = len)
     
     answer = []
     for tup in tuples:
-        for i in tup:
-            i = int(i)
-            if i not in answer:
-                answer.append(i)
-                break
-    
+        for num in tup:
+            num = int(num)
+            if num not in answer:
+                answer.append(num)
     return answer
